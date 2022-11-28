@@ -194,7 +194,9 @@ INSERT INTO `ticket` (`ticketID`, `PassengerID`, `FlightID`, `SeatNo`, `OrderedA
         VALUES ('0123532148', 1, 1, 10, NOW(), 1),
                ('0171234444', 2, 1, 11, NOW(), 1),
                ('0181234510', 3, 1, 12, NOW(), 2),
-               ('0191234510', 4, 1, 13, NOW(), 2);
+               ('0191234510', 4, 1, 13, NOW(), 2),
+               ('0101234510', 5, 2, 13, NOW(), 2),
+               ('0111234510', 6, 3, 13, NOW(), 2);
 
 
 INSERT INTO `City` (`ID`, `Name`, `CountryCode`, `District`, `Population`) VALUES
