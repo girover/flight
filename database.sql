@@ -7,7 +7,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `flight_system`
 --
-CREATE DATABASE flight_system
+CREATE DATABASE flightBooking
 -- --------------------------------------------------------
 
 --
