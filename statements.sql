@@ -9,7 +9,8 @@ AND route.RouteID = flight.RouteID;
 
 -- get all flights from københavn
 
-SELECT flight.FlightID, DepartureTime, ArrivalTime, TicketPrice, a1.Name AS 'From_Airport', a2.Name AS 'To_Airport', Distance, Duration
+SELECT flight.FlightID, DepartureTime, ArrivalTime, TicketPrice, a1.Name AS 'From_Airport', a2.Name AS 'To_Airport', Distance, 
+CONCAT(Duration DIV 60, 'h ', MOD(Duration, 60), 'm') AS Duaration
 FROM flight, airport a1, airport a2, route
 WHERE route.FromAirportCode = a1.AirportCode 
 AND route.ToAirportCode = a2.AirportCode
@@ -20,7 +21,8 @@ AND a1.CityId = (
 
 -- get all flights from Bilund
 
-SELECT flight.FlightID, DepartureTime, ArrivalTime, TicketPrice, a1.Name AS 'From_Airport', a2.Name AS 'To_Airport', Distance, Duration
+SELECT flight.FlightID, DepartureTime, ArrivalTime, TicketPrice, a1.Name AS 'From_Airport', a2.Name AS 'To_Airport', Distance, 
+CONCAT(Duration DIV 60, 'h ', MOD(Duration, 60), 'm') AS Duaration
 FROM flight, airport a1, airport a2, route
 WHERE route.FromAirportCode = a1.AirportCode 
 AND route.ToAirportCode = a2.AirportCode
@@ -31,7 +33,8 @@ AND a1.CityId = (
 
 -- get all flights To Bilund
 
-SELECT flight.FlightID, DepartureTime, ArrivalTime, TicketPrice, a1.Name AS 'From_Airport', a2.Name AS 'To_Airport', Distance, Duration
+SELECT flight.FlightID, DepartureTime, ArrivalTime, TicketPrice, a1.Name AS 'From_Airport', a2.Name AS 'To_Airport', Distance, 
+CONCAT(Duration DIV 60, 'h ', MOD(Duration, 60), 'm') AS Duaration
 FROM flight, airport a1, airport a2, route
 WHERE route.FromAirportCode = a1.AirportCode 
 AND route.ToAirportCode = a2.AirportCode
