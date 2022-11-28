@@ -76,7 +76,7 @@ CREATE TABLE `flight` (
   `RouteID` int(11) NOT NULL,
   `DepartureTime` Datetime NOT NULL,
   `ArrivalTime` Datetime NOT NULL,
-  `TicketPrice` Deciaml(6,2) NOT NULL
+  `TicketPrice` Decimal(6,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
