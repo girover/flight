@@ -19,7 +19,7 @@ CREATE TABLE `city` (
   `Name` char(35) NOT NULL,
   `CountryCode` char(3) NOT NULL,
   `District` char(20) NOT NULL,
-  `Population` int(11) NULL,
+  `Population` int(11) NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
